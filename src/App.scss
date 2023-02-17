@@ -1,0 +1,9 @@
+@forward './Styles/Styles.scss';
+@use './Styles/Styles.scss';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  

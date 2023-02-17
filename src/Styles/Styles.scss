@@ -1,0 +1,6 @@
+@forward './partials/mixins';
+@forward './partials/typography';
+
+
+@use './partials/mixins' as *;
+@use './partials/typography' as *;

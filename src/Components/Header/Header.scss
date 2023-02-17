@@ -1,0 +1,15 @@
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/typography' as *;
+
+.header {    
+    @include raleway;
+    @include main-colour;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    &__title {
+        padding-bottom: 0.5rem;
+    }
+}
