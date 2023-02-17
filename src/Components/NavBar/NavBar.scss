@@ -1,0 +1,14 @@
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/typography' as *;
+
+.navbar {
+    @include raleway;
+    @include main-colour;
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    &__link {
+        padding: 0.5rem 1rem;
+    }
+}
