@@ -3,7 +3,7 @@
 
 .header {    
     @include raleway;
-    color: mobile-main-colour;
+    @include text-colour;
     display: flex;
     flex-direction: column;
     align-items: center;

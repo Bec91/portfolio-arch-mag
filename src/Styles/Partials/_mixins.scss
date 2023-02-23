@@ -28,10 +28,6 @@ $desktop-breakpoint: 1280px;
 
 // COLOURS
 
-@mixin main-colour {
-    background-color: #183A1D;
-}
-
-@mixin mobile-main-colour {
+@mixin text-colour {
     color: #434242;
 }
