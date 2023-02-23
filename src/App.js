@@ -3,16 +3,15 @@ import './App.scss';
 
 //Components
 import Header from './Components/Header/Header';
-import Navbar from './Components/NavBar/NavBar';
+import Home from './Components/HomePage/Home';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Navbar/>
       <BrowserRouter>
+        <Header/>
         <Routes>
-          {/* <Route path='/' element={<Home/>}/> */}
+          <Route path='/' element={<Home/>}/>
           {/* <Route path='/about' element={<About/>}/> */}
           {/* <Route path='/contact' element={<Contact/>}/> */}
 

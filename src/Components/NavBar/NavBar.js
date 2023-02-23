@@ -1,16 +1,22 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './NavBar.scss';
 
 function Navbar() {
     return (
-        <>
         <div className='navbar'>
-            {/* <Link to='/' className='navbar__link'>Home</Link> */}
-            {/* <Link to='/about' className='navbar__link'>About</Link>
-            <Link to='/contact' className='navbar__link'>Contact</Link>
- */}
+            <ul className='navbar__container'>
+                <li>
+                    <NavLink to='/' className='navbar__link'>Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/about' className='navbar__link'>About</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/contact' className='navbar__link'>Contact</NavLink>
+                </li>
+
+            </ul>
         </div>
-        </>
     )
 }
 
