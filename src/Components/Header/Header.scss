@@ -3,7 +3,6 @@
 
 .header {    
     @include raleway;
-    @include main-colour;
     color: #FFF;
     display: flex;
     flex-direction: column;
@@ -16,6 +15,9 @@
     @include desktop-breakpoint {
         padding: 3.5rem 6rem;
     }
+        background-image: url(../../Assets/Images/verne.jpg);
+        background-size: cover;
+        background-position: center;
     &__title {
         padding-bottom: 0.5rem;
         @include desktop-breakpoint {
