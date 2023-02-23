@@ -4,18 +4,13 @@
 .navbar {
     &__container {
         @include raleway;
-        @include main-colour;
         display: flex;
         list-style-type: none;
         justify-content: center;
         padding: 2rem 0 0.5rem 0;
-        // @include tablet-breakpoint {
-        //     display: flex;
-        //     justify-content: flex-end;
-        //     position: relative;
-        //     bottom: 3.75rem;
-        //     padding-right: 4rem;
-        // }
+        @include tablet-breakpoint {
+            padding-top: 1rem;
+        }
     
     }
     &__link {

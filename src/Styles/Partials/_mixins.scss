@@ -32,3 +32,6 @@ $desktop-breakpoint: 1280px;
     background-color: #183A1D;
 }
 
+@mixin mobile-main-colour {
+    color: #434242;
+}
