@@ -8,7 +8,9 @@ function Home() {
         <div className="home">
             <h3 className="home__title">Vestibulum Dictum Nulla</h3>
             <Paragraph/>
-            <img src={GirlAndBuilding} alt="girl standing in front of building" className="home__image"/>
+            <div className="home__imageContainer">
+                <img src={GirlAndBuilding} alt="girl standing in front of building" className="home__image"/>
+            </div>
             <Paragraph/>
             <img src={OutdoorBuilding} alt="girl standing in front of building" className="home__image--two"/>
             <Paragraph/>
