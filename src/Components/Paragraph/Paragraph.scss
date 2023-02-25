@@ -7,5 +7,12 @@
     text-align: start;
     @include tablet-breakpoint {
         padding: 1rem 4rem;
+        line-height: 1.5rem;
+
+    }
+    @include desktop-breakpoint {
+        width: 40rem;
+        font-size: 1rem;
+        line-height: 2rem;
     }
 }

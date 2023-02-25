@@ -2,48 +2,74 @@
 @use '../../Styles/Partials/typography' as *;
 
 .home {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     @include text-colour;
     @include mukta;
-    @include tablet-breakpoint {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    &__titleContainer{
+        margin: auto;
+        @include tablet-breakpoint {
+            display: flex;
+            justify-content: flex-start;
+            padding: 3rem 0 0 3.25rem;
+            margin: 0;
+        }
+        @include desktop-breakpoint {
+            padding: 3rem 0 0 6.5rem;
+            // display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
     }
     &__title {
         padding: 1.5rem 1rem 0.5rem 1rem;
         @include tablet-breakpoint {
             display: flex;
-            justify-content: flex-start;
-            padding: 1.75rem 4rem;
+        }
+    }
+    &__contentContainer {
+        @include tablet-breakpoint {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;            
+            padding-top: 3rem;
+        }
+        @include desktop-breakpoint {
+            margin: auto;
+            padding: 2rem 3rem;
+            display: flex;
+            flex-direction: row;
         }
     }
     &__imageContainer {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
         @include tablet-breakpoint {
-            // display: flex;
-            justify-content: flex-end;
-            // margin: auto;
-            // padding: 1.75rem 4rem;    
+            padding: 5rem 2rem 3rem 1rem;
+        }
+        @include desktop-breakpoint {
+            padding: 5rem 6rem;
         }
     }
     &__image {
         height: 50vh;
         width: auto;
         object-fit: cover;
-        @include tablet-breakpoint {
-            height: 75vh;
+        @include desktop-breakpoint {
+            height: 60vh;
         }
         &--two {
-            height: auto;
-            width: 85%;
-            object-fit: contain;
-            margin: auto;
+            height: 45vh;
             @include tablet-breakpoint {
-                padding: 1.75rem 2rem;
-                width: 65%;
+                height: 50vh;
             }
             @include desktop-breakpoint {
-                width: 50%;
+                height: 55vh;
             }
+    
         }
     }
 }
