@@ -4,6 +4,7 @@ import './App.scss';
 //Components
 import Header from './Components/Header/Header';
 import Home from './Components/HomePage/Home';
+import About from './Components/About/About';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          {/* <Route path='/about' element={<About/>}/> */}
+          <Route path='/about' element={<About/>}/>
           {/* <Route path='/contact' element={<Contact/>}/> */}
 
         </Routes>

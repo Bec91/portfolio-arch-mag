@@ -1,13 +1,12 @@
 @use '../../Styles/Partials/mixins' as *;
 @use '../../Styles/Partials/typography' as *;
 
-.home {
-    @include text-colour;
+.about {
     @include mukta;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    &__titleContainer{
+    &__titleContain {
         margin: auto;
         @include tablet-breakpoint {
             display: flex;
@@ -16,23 +15,26 @@
             margin: 0;
         }
         @include desktop-breakpoint {
-            padding: 3rem 0 0 6.5rem;
+            padding-top: 3rem;
             flex-direction: row;
             flex-wrap: wrap;
-
+            justify-content: space-evenly;
         }
     }
     &__title {
-        padding: 1.5rem 1rem 0.5rem 1rem;
+        padding: 1.5rem 1rem 0.5rem 1.5rem;
         @include tablet-breakpoint {
             display: flex;
         }
+        @include desktop-breakpoint {
+            padding: 1.5rem 0.75rem 0 0;
+        }
     }
-    &__contentContainer {
+    &__contentContain {
         @include tablet-breakpoint {
             display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;            
+            flex-wrap: wrap;            
             padding-top: 3rem;
         }
         @include desktop-breakpoint {
@@ -40,35 +42,37 @@
             padding: 2rem 3rem;
             display: flex;
             flex-direction: row;
+            justify-content: center;
+
         }
     }
-    &__imageContainer {
+    &__paragraph {
+        @include tablet-breakpoint {
+           display: flex;
+           flex-direction: row;
+           padding: 0 0.75rem;
+        }
+        @include desktop-breakpoint {
+            padding-top: 5rem;
+        }
+    }
+    &__imageContain {
         padding: 1rem;
         display: flex;
         justify-content: center;
         @include tablet-breakpoint {
-            padding: 5rem 2rem 3rem 1rem;
+            padding: 11rem 2rem 5rem 2rem;
         }
         @include desktop-breakpoint {
-            padding: 5rem 6rem;
+            padding: 0 6rem;
         }
     }
-    &__image {
+    &__image{
         height: 50vh;
         width: auto;
         object-fit: cover;
         @include desktop-breakpoint {
             height: 60vh;
-        }
-        &--two {
-            height: 45vh;
-            @include tablet-breakpoint {
-                height: 50vh;
-            }
-            @include desktop-breakpoint {
-                height: 55vh;
-            }
-    
         }
     }
 }
