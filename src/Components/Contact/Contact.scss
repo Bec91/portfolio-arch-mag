@@ -1,2 +1,48 @@
 @use '../../Styles/Partials/mixins' as *;
 @use '../../Styles/Partials/typography' as *;
+
+.form {
+    @include mukta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    color: #434242;
+    &__formTitle {
+        @include raleway;
+        padding-bottom: 2rem;
+        @include desktop-breakpoint {
+            font-size: 2.5rem;
+
+        }
+    }
+    &__inputContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__label {
+        padding: 2rem 0.5rem 1rem 0.5rem;
+    }
+    &__formField {
+        border: none;
+        border-bottom: 1px solid #434242;
+    }
+    &__buttonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem ;
+    }
+    &__button {
+        @include mukta;
+
+        align-items: center;
+        padding: 0.25rem 3rem;
+        border-radius: 1.5rem;
+        border: none;
+        font-weight: 900;
+        background-color: #434242;
+        color: #FFF;
+    }
+}

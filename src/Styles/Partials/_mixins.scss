@@ -2,6 +2,7 @@
 
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1280px;
+$monitor-breakpoint: 2000px;
 
 
 @mixin tablet-breakpoint {
@@ -15,6 +16,13 @@ $desktop-breakpoint: 1280px;
         @content;
     }
 }
+
+@mixin monitor-breakpoint {
+    @media screen and (min-width: $monitor-breakpoint){
+        @content;
+    }
+}
+
 
 // Font Family
 

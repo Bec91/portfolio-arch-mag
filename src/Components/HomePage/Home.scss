@@ -19,7 +19,6 @@
             padding: 3rem 0 0 6.5rem;
             flex-direction: row;
             flex-wrap: wrap;
-
         }
     }
     &__title {
@@ -27,6 +26,10 @@
         padding: 1.5rem 1rem 0.5rem 1rem;
         @include tablet-breakpoint {
             display: flex;
+        }
+        @include monitor-breakpoint {
+            position: relative;
+            top: 5.5rem;
         }
     }
     &__contentContainer {
@@ -37,10 +40,10 @@
             padding-top: 3rem;
         }
         @include desktop-breakpoint {
-            margin: auto;
-            padding: 2rem 3rem;
+            padding: 2rem 1rem;
             display: flex;
             flex-direction: row;
+            justify-content: center;
         }
     }
     &__imageContainer {
@@ -51,7 +54,7 @@
             padding: 5rem 2rem 3rem 1rem;
         }
         @include desktop-breakpoint {
-            padding: 2rem 6rem 5rem 6rem;
+            padding: 2rem 4rem 5rem 4rem;
         }
     }
     &__image {
