@@ -3,11 +3,11 @@
 
 .form {
     @include mukta;
+    @include text-colour;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
-    color: #434242;
     &__formTitle {
         @include raleway;
         padding-bottom: 2rem;

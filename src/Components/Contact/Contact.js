@@ -1,6 +1,9 @@
 import './Contact.scss'
 import React from "react"
 
+// COMPONENTS 
+import Footer from '../Footer/Footer';
+
 function Contact() {
     const [formStatus, setFormStatus] = React.useState('SEND');
 
@@ -18,49 +21,52 @@ function Contact() {
     }
 
     return(
-        <div className='form'>
-            <h3 className='form__formTitle'>Contact Us to be featured</h3>
-            <form
-                onSubmit={onSubmit}
-                method="POST"
-                target='_blank'
-            >
-                <div className='form__inputContainer'>
-                    <label className='form__label' htmlFor='name'>Name</label>
-                    <input
-                        className='form__formField'
-                        type="text"
-                        id='name'
-                        required
-                    />
-                </div>
-                <div className='form__inputContainer'>
-                <label className='form__label' htmlFor='email'>Email</label>
-                    <input
-                        className='form__formField'
-                        type="email"
-                        id='email'
-                        required
-                    />
-                </div>
-                <div className='form__inputContainer'>
-                <label className='form__label' htmlFor='message'>Message</label>
-                    <textarea
-                        className='form__formField'
-                        id='message'
-                        required
-                    />
-                </div>
-                <div className='form__buttonContainer'>
-                    <button
-                        type='submit'
-                        className='form__button'
-                    >
-                        {formStatus}
-                    </button>
-                </div>
-            </form>
-        </div>
+        <>
+            <div className='form'>
+                <h3 className='form__formTitle'>Contact Us to be featured</h3>
+                <form
+                    onSubmit={onSubmit}
+                    method="POST"
+                    target='_blank'
+                >
+                    <div className='form__inputContainer'>
+                        <label className='form__label' htmlFor='name'>Name</label>
+                        <input
+                            className='form__formField'
+                            type="text"
+                            id='name'
+                            required
+                        />
+                    </div>
+                    <div className='form__inputContainer'>
+                    <label className='form__label' htmlFor='email'>Email</label>
+                        <input
+                            className='form__formField'
+                            type="email"
+                            id='email'
+                            required
+                        />
+                    </div>
+                    <div className='form__inputContainer'>
+                    <label className='form__label' htmlFor='message'>Message</label>
+                        <textarea
+                            className='form__formField'
+                            id='message'
+                            required
+                        />
+                    </div>
+                    <div className='form__buttonContainer'>
+                        <button
+                            type='submit'
+                            className='form__button'
+                        >
+                            {formStatus}
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <Footer/>
+        </>
     )
 }
 
