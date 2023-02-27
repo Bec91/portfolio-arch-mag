@@ -22,12 +22,14 @@
         }
     }
     &__title {
+        @include raleway;
         padding: 1.5rem 1rem 0.5rem 1.5rem;
         @include tablet-breakpoint {
             display: flex;
         }
         @include desktop-breakpoint {
             padding: 1.5rem 0.75rem 0 0;
+            font-size: 3rem;
         }
     }
     &__contentContain {
@@ -50,10 +52,10 @@
         @include tablet-breakpoint {
            display: flex;
            flex-direction: row;
-           padding: 0 0.75rem;
+           padding: 0;
         }
         @include desktop-breakpoint {
-            padding-top: 5rem;
+            padding-top: 8rem;
         }
     }
     &__imageContain {
@@ -61,7 +63,7 @@
         display: flex;
         justify-content: center;
         @include tablet-breakpoint {
-            padding: 11rem 2rem 5rem 2rem;
+            padding: 1.5rem 2rem 5rem 2rem;
         }
         @include desktop-breakpoint {
             padding: 0 6rem;
