@@ -5,6 +5,7 @@ import './App.scss';
 import Header from './Components/Header/Header';
 import Home from './Components/HomePage/Home';
 import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
-          {/* <Route path='/contact' element={<Contact/>}/> */}
+          <Route path='/contact' element={<Contact/>}/>
 
         </Routes>
       </BrowserRouter>
