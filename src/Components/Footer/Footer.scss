@@ -1,2 +1,25 @@
 @use '../../Styles/Partials/mixins' as *;
 @use '../../Styles/Partials/typography' as *;
+
+.footer {
+    @include mukta;
+    @include background-colour;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__iconContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+    &__icon {
+        padding: 0.5rem;
+    }
+    &__copyright {
+        display: flex;
+        justify-content: center;
+        color: #FFF;
+        font-size: small;
+    }
+}
